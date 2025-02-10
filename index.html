@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Pedro Duarte</title>
 
   <!--
     - favicon
@@ -47,12 +47,26 @@
 
         <div class="info-content">
           <h1 class="name" title="Richard hanrick">Pedro Duarte</h1>
+          <div class="positionAndLang">
+            <p class="title" data-translate="title">Software Engineer</p>
+            <ul class="translation-list">
+              <li class="translation-item">
+                <a href="#" class="translate-button" data-language="pt">
+                  <img src="./assets/images/brazil.png" alt="pt-BR" width="25">
+                </a>
+              </li>
+              <li class="translation-item">
+                <a href="#" class="translate-button" data-language="en">
+                  <img src="./assets/images/united-states.png" alt="en-US" width="25">
+                </a>
+              </li>
+            </ul>
+          </div>
 
-          <p class="title">Software Engineer</p>
-        </div>
+      </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+          <span data-translate="showContacts">Show Contacts</span>
 
           <ion-icon name="chevron-down"></ion-icon>
         </button>
@@ -86,7 +100,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
+              <p class="contact-title" data-translate="phone">Phone</p>
 
               <a href="tel:+5531998387711" class="contact-link">+55 (31) 99838-7711</a>
             </div>
@@ -100,9 +114,9 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+              <p class="contact-title" data-translate="birthday" >Birthday</p>
 
-              <time datetime="1999-01-21">January 21, 1999</time>
+              <time datetime="1999-01-21" data-translate="birthdayDate">January 21, 1999</time>
             </div>
 
           </li>
@@ -114,7 +128,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Location</p>
+              <p class="contact-title" data-translate="location">Location</p>
 
               <address>Belo Horizonte, Minas Gerais, Brazil</address>
             </div>
@@ -147,6 +161,7 @@
 
         </ul>
 
+
       </div>
 
     </aside>
@@ -168,15 +183,15 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active"  data-translate="about" data-nav-link>About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-translate="resume" data-nav-link>Resume</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-translate="portfolio" data-nav-link>Portfolio</button>
           </li>
 
           <!-- <li class="navbar-item">
@@ -184,7 +199,7 @@
           </li> -->
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-translate="contact" data-nav-link>Contact</button>
           </li>
 
         </ul>
@@ -202,15 +217,15 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title" data-translate="aboutMe">About me</h2>
         </header>
 
         <section class="about-text">
-          <p> I am a passionate software developer who thrives on solving complex problems and crafting efficient solutions. With strong communication skills, I excel in collaborative team environments. My primary focus is backend development, and I am particularly enthusiastic about distributed systems. </p>
+          <p data-translate="aboutText1"> I am a passionate software developer who thrives on solving complex problems and crafting efficient solutions. With strong communication skills, I excel in collaborative team environments. My primary focus is backend development, and I am particularly enthusiastic about distributed systems. </p>
 
-          <p> Throughout my career, I have worked across diverse domains and technologies, ranging from developing intricate APIs to building web frontend applications. I have also gained hands-on experience in DevOps and on-premise application deployment. Additionally, I have had the opportunity to take on roles such as technical leadership and product ownership, where I leveraged my expertise while continuously honing my skills. I am committed to constant improvement, whether by mastering new technologies or exploring innovative methods to boost efficiency. </p>
+          <p data-translate="aboutText2"> Throughout my career, I have worked across diverse domains and technologies, ranging from developing intricate APIs to building web frontend applications. I have also gained hands-on experience in DevOps and on-premise application deployment. Additionally, I have had the opportunity to take on roles such as technical leadership and product ownership, where I leveraged my expertise while continuously honing my skills. I am committed to constant improvement, whether by mastering new technologies or exploring innovative methods to boost efficiency. </p>
 
-          <p> With three years of industry experience, I have been responsible for proposing and implementing digital solutions, developing APIs from scratch, creating new features, and maintaining legacy systems. I enjoy collaborating with fellow developers, learning from seasoned professionals, and mentoring newcomers. I am always eager to embrace new technologies and tackle challenging problems head-on. </p>
+          <p data-translate="aboutText3"> With three years of industry experience, I have been responsible for proposing and implementing digital solutions, developing APIs from scratch, creating new features, and maintaining legacy systems. I enjoy collaborating with fellow developers, learning from seasoned professionals, and,  when possible, mentoring newcomers. I am always eager to embrace new technologies and tackle challenging problems head-on. </p>
         </section>
 
 
@@ -220,7 +235,7 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">Skills</h3>
+          <h3 class="h3 service-title" data-translate="sills">Skills</h3>
 
           <ul class="service-list">
 
@@ -234,7 +249,7 @@
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Backend</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-translate="backendText">
                   API development of complex solutions.
                 </p>
               </div>
@@ -250,7 +265,7 @@
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Frontend</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-translate="frontendText">
                   Development of web applications.
                 </p>
               </div>
@@ -264,9 +279,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">System Integration</h4>
+                <h4 class="h4 service-item-title" data-translate="systemIntegrationTitle">System Integration</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-translate="systemIntegrationText">
                   Integration of self developed and external services.
                 </p>
               </div>
@@ -282,7 +297,7 @@
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Devops</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text"  c>
                   Management of sistems trhough  computing infrasruccture.
                 </p>
               </div>
@@ -297,9 +312,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Reelationship</h4>
+                <h4 class="h4 service-item-title" data-translate="relationshipTitle">Reelationship</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" c>
                   Great relationship and comunication with clients and coleges .
                 </p>
               </div>
@@ -464,7 +479,7 @@
 
         <section class="clients">
 
-          <h3 class="h3 clients-title">Clients</h3>
+          <h3 class="h3 clients-title" data-translate="clients">Clients</h3>
 
           <ul class="clients-list has-scrollbar">
             <li class="clients-item">
@@ -500,7 +515,7 @@
       <article class="resume" data-page="resume">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title" data-translate="resume">Resume</h2>
         </header>
 
         <section class="timeline">
@@ -510,50 +525,50 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3" data-translate="experience">Experience</h3>
           </div>
 
           <ol class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Bwtech</h4> <span>2022 — 2024</span>
-              <p class="timeline-text"> <strong>Software Developer</strong> </p>
-              <p class="timeline-text"> Fullstack developer working on multiple products. Key responsibilities included: </p>
+              <h4 class="h4 timeline-item-title">Bwtech</h4> <span>04/2022 — 10/2024</span>
+              <p class="timeline-text"> <strong data-translate="bwtechRole">Software Developer</strong> </p>
+              <p class="timeline-text" data-translate="bwtechText1"> Fullstack developer working on multiple products. Key responsibilities included: </p>
               <ul class="timeline-text">
-                <li>Developing APIs using <strong>C#</strong> and <strong>Python</strong>.</li>
-                <li>Building and maintaining web applications using <strong>React</strong>.</li>
-                <li>Managing system integration and on-premise applications.</li>
-                <li>Maintaining and optimizing CI/CD pipelines.</li>
-                <li>Building and managing databases.</li>
-                <li>Developing systems for monitoring service performance.</li>
+                <li data-translate="bwtechText2">Developing APIs using C# and Python.</li>
+                <li data-translate="bwtechText3">Building and maintaining web applications using React.</li>
+                <li data-translate="bwtechText4">Managing system integration and on-premise applications.</li>
+                <li data-translate="bwtechText5">Maintaining and optimizing CI/CD pipelines.</li>
+                <li data-translate="bwtechText6">Building and managing databases.</li>
+                <li data-translate="bwtechText7">Developing systems for monitoring service performance.</li>
               </ul>
             </li>
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Commit Jr</h4> <span>2021 — 2023</span>
-              <p class="timeline-text"> <strong>Software Developer</strong> </p>
-              <p class="timeline-text"> Fullstack developer responsible for: </p>
+              <p class="timeline-text"  > <strong data-translate="commitJrRole1">Software Developer</strong> </p>
+              <p class="timeline-text" data-translate="commitJrText1"> Fullstack developer responsible for: </p>
               <ul class="timeline-text">
-                <li>Developing applications using <strong>React</strong> and <strong>Node.js</strong>.</li>
+                <li  data-translate="commitJrText2">Developing applications using Reacts and Node.jss.</li>
               </ul>
               <p>  </p>
-              <p class="timeline-text"> <strong>Leadership Roles:</strong> </p>
+              <p class="timeline-text"> <strong  data-translate="commitJrRole2">Leadership Roles:</strong> </p>
               <ul class="timeline-text">
-                <li>Squad Leader and Product Owner.</li>
-                <li>Created technical documentation and led development teams using agile methodologies.</li>
+                <li data-translate="commitJrText3">Squad Leader and Product Owner.</li>
+                <li data-translate="commitJrText4">Created technical documentation and led development teams using agile methodologies.</li>
               </ul>
-              <p class="timeline-text"> <strong>Sales Consulting Analyst:</strong> </p>
+              <p class="timeline-text"> <strong data-translate="commitJrRole3">Sales Consulting Analyst:</strong> </p>
               <ul class="timeline-text">
-                <li>Generated leads and guided customers through their journey.</li>
-                <li>Analyzed customer needs and recommended suitable products/services.</li>
+                <li data-translate="commitJrText5">Generated leads and guided customers through their journey.</li>
+                <li data-translate="commitJrText6">Analyzed customer needs and recommended suitable products/services.</li>
               </ul>
             </li>
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">CEMIG</h4> <span>2019 — 2020</span>
-              <p class="timeline-text"> <strong>Internship in Electrical Energy Distribution</strong> </p>
-              <p class="timeline-text"> Worked within a team responsible for: </p>
+              <h4 class="h4 timeline-item-title">CEMIG</h4> <span>07/2019 — 05/2020</span>
+              <p class="timeline-text"> <strong data-translate="cemighRole">Internship in Electrical Energy Distribution</strong> </p>
+              <p class="timeline-text" data-translate="cemigText1"> Worked within a team responsible for: </p>
               <ul class="timeline-text">
-                <li>Studying electrical energy distribution and developing technical standards.</li>
-                <li>Preparing technical reports and assisting in research and development activities.</li>
-                <li>Providing technical support to other departments.</li>
+                <li  data-translate="cemigText2">Studying electrical energy distribution and developing technical standards.</li>
+                <li  data-translate="cemigText3">Preparing technical reports and assisting in research and development activities.</li>
+                <li  data-translate="cemigText4">Providing technical support to other departments.</li>
               </ul>
             </li>
           </ol>
@@ -566,7 +581,7 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Education</h3>
+            <h3 class="h3" data-translate="education">Education</h3>
           </div>
 
           <ol class="timeline-list">
@@ -577,7 +592,7 @@
 
               <span>2020 — 2025</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-translate="educationText1">
                 Bachelor of Computer Engineering
               </p>
 
@@ -589,7 +604,7 @@
 
               <span>2015 — 2018</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-translate="educationText2">
                 Electronics Technician
               </p>
 
@@ -602,9 +617,9 @@
 
         <section class="skill">
 
-          <h2 class="h2 skills-title">My skills</h3>
+          <h2 class="h2 skills-title" data-translate="mySkills">My skills</h3>
 
-          <h2 class="h3 skills-title">Languages</h3>
+          <h2 class="h3 skills-title" data-translate="languages">Languages</h3>
           <ul class="skills-list content-card">
 
             <li class="skills-item">
@@ -658,7 +673,7 @@
             </li>
           </ul>
 
-          <h2 class="h3 skills-title">Frameworks and Development Tools</h3>
+          <h2 class="h3 skills-title" data-translate="frameworks">Frameworks and Development Tools</h3>
             <ul class="skills-list content-card">
 
               <li class="skills-item">
@@ -724,13 +739,13 @@
               </li>
             </ul>
 
-            <h2 class="h3 skills-title">Others</h3>
+            <h2 class="h3 skills-title" data-translate="others">Others</h3>
               <ul class="skills-list content-card">
-
+s
                 <li class="skills-item">
 
                   <div class="title-wrapper">
-                    <h5 class="h5">Agile</h5>
+                    <h5 class="h5">Agile Methodologies</h5>
                     <data value="100">100%</data>
                   </div>
 
@@ -743,7 +758,7 @@
                 <li class="skills-item">
 
                   <div class="title-wrapper">
-                    <h5 class="h5">.Clean Code + Design Patters</h5>
+                    <h5 class="h5">Clean Code + Design Patters</h5>
                     <data value="90">90%</data>
                   </div>
 
@@ -757,7 +772,7 @@
                 <li class="skills-item">
 
                   <div class="title-wrapper">
-                    <h5 class="h5">Communication</h5>
+                    <h5 class="h5" data-translate="communication">Communication</h5>
                     <data value="80">80%</data>
                   </div>
 
@@ -780,7 +795,7 @@
       <article class="portfolio" data-page="portfolio">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title" data-translate="portfolio">Portfolio</h2>
         </header>
 
         <section class="projects">
@@ -890,7 +905,7 @@
 
                 <h3 class="project-title">Personal Projects</h3>
 
-                <p class="project-category">Personal</p>
+                <p class="project-category" data-translate="personalProjects">Personal projects</p>
 
               </a>
             </li>
@@ -1104,7 +1119,7 @@
       <article class="contact" data-page="contact">
 
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 class="h2 article-title" data-translate="contact">Contact</h2>
         </header>
 
         <section class="mapbox" data-mapbox>
@@ -1115,7 +1130,7 @@
 
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title" data-translate="contactForm">Contact Form</h3>
 
           <form action="#" class="form" data-form>
 
@@ -1129,7 +1144,7 @@
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+              <span data-translate="sendMessage">Send Message</span>
             </button>
 
           </form>

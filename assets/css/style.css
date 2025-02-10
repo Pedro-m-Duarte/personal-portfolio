@@ -446,6 +446,17 @@ main {
 
 .social-item .social-link:hover { color: var(--light-gray); }
 
+.translation-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  padding-left: 7px;
+  padding-top: 10px;
+}
+
+.translation-list { justify-content: center; }
+
 
 
 
@@ -1341,6 +1352,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
+  .positionAndLang  {
+    display: flex;
+    align-items: flex-end;
+  }
+
+
   .avatar-box { border-radius: 30px; }
 
   .avatar-box img {
@@ -1842,6 +1859,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { flex-direction: column; }
 
+
   .avatar-box img { width: 150px; }
 
   .info-content .name {
@@ -1856,6 +1874,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar-info_more {
     opacity: 1;
     visibility: visible;
+  }
+
+  .positionAndLang  {
+    display: block;
   }
 
   .contacts-list { grid-template-columns: 1fr; }
